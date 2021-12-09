@@ -18,9 +18,6 @@ pushd "${SCRIPT_DIR}/.."
 echo Working dir
 pwd
 
-echo "Update npm"
-npm install -g npm@7.9.0
-
 echo "Building Web Page"
 
 npm install
