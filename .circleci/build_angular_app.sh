@@ -24,7 +24,6 @@ npm install -g npm@8.2.0
 npm install
 #npx cypress install --force
 
-git checkout gh-pages
 
 npm run lint
 npm run build -- --output-path docs --base-href /angular-web-page-poc/
@@ -34,10 +33,8 @@ npm run test -- --karma-config karma.conf.ci.js
 
 cp "docs/index.html" "docs/404.html"
 touch docs/.nojekyll
-
-
-
+rm -f .circleci/config.yml  # don't build on gh-branch
 
 git add docs
 git commit -m"Update Github angular page automated."
-git push
+git push --force origin HEAD:gh-pages
