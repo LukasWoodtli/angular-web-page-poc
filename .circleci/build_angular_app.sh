@@ -33,6 +33,7 @@ npm run test -- --karma-config karma.conf.ci.js
 
 cp "docs/index.html" "docs/404.html"
 touch docs/.nojekyll
+rm -f docs/assets/.gitignore  # .gitignore is needed during development
 rm -f .circleci/config.yml  # don't build on gh-branch
 
 git add docs
