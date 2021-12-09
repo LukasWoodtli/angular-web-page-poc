@@ -33,9 +33,10 @@ npm run test -- --karma-config karma.conf.ci.js
 
 cp "docs/index.html" "docs/404.html"
 touch docs/.nojekyll
-rm -f docs/assets/.gitignore  # .gitignore is needed during development
-rm -f .circleci/config.yml  # don't build on gh-branch
+git rm -f docs/assets/.gitignore  # .gitignore is needed during development
+git rm -f .circleci/config.yml  # don't build on gh-branch
 
+git add -u .
 git add docs
 git commit -m"Update Github angular page automated."
 git push --force origin HEAD:gh-pages
