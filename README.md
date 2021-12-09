@@ -1,5 +1,7 @@
-# My Web Page
+# Angular variant of my Web Page
 
-This are the sources of my web page.
+> This is an incomplete proof of concept!
 
-The page is available at: http://lukaswoodtli.github.io
+Keep in mind that this is not my offcial page!
+
+The page is available at: https://lukaswoodtli.github.io/angular-web-page-poc/
