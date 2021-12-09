@@ -26,7 +26,7 @@ npm install
 
 
 npm run lint
-npm run build -- --output-path docs --base-href /angular-web-page-poc/
+npm run build -- --prod --output-path docs --base-href /angular-web-page-poc/
 npm run test -- --karma-config karma.conf.ci.js
 #npm run e2e:ci
 
