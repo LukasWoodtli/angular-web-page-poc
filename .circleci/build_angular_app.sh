@@ -20,6 +20,7 @@ pwd
 
 echo "Building Web Page"
 
+npm install -g npm@8.2.0
 npm install
 #npx cypress install --force
 
