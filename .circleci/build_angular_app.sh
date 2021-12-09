@@ -23,7 +23,7 @@ npm install -g npm@7.9.0
 
 echo "Building Web Page"
 
-npm ci
+npm install
 #npx cypress install --force
 
 
