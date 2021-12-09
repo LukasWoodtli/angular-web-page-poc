@@ -14,9 +14,6 @@ jobs:
             - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
             - v1-deps-{{ .Branch }}
             - v1-deps
-      - run:
-          name: Install Dependencies
-          command: npm ci
       - run: git config --global user.name "circleci (Lukas Woodtli)" &&  git config --global user.email lukas_woodtli@circleci.example.com
       - save_cache:
           key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
